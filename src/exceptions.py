@@ -5,7 +5,7 @@ class BusinessError(Exception):
         super().__init__(message)
 
 
-class NotFoundError(BusinessError):
+class NotFoundError(Exception):
     """Raised when a requested resource is not found."""
 
     def __init__(self, message: str):
